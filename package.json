@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "lerna": "^6.4.0",
+    "private": "true"
+  },
+  "name": "xi-monorepo-fe",
+  "private": "true",
+  "scripts": {
+    "bootstrap": "lerna bootstrap --nohoist"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "components"
+    ],
+    "nohoist": [
+      "**/gulp",
+      "**/gulp-*"
+    ]
+  }
+}

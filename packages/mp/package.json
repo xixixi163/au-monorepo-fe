@@ -1,0 +1,26 @@
+{
+  "name": "mp",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "xixixi163 <68846852+xixixi163@users.noreply.github.com>",
+  "homepage": "https://github.com/xixixi163/xi-monorepo-fe#readme",
+  "license": "ISC",
+  "main": "lib/mp.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://xixixi163: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@github.com/xixixi163/xi-monorepo-fe.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/mp.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/xixixi163/xi-monorepo-fe/issues"
+  }
+}

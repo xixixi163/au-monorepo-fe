@@ -1,0 +1,20 @@
+{
+  "name": "@leaf/uni-ui",
+  "version": "1.0.0",
+  "description": "测试实现一个uniapp组件库",
+  "main": "lib",
+  "repository": "git+https://xixixi163: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@github.com/xixixi163/xi-monorepo-fe.git",
+  "author": "xixixi",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "7",
+    "babel-core": "^7.0.0-bridge.0",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "gulp-babel": "7"
+  }
+}
