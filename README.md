@@ -52,3 +52,15 @@ bar
     "@foo/utils": "workspace:*"
 }
 ```
+
+## 发布 changesets
+https://pnpm.io/zh/using-changesets
+
+配置：要在 pnpm 工作空间上配置 changesets，将 changesets 作为开发依赖项安装在工作空间的根目录中：
+
+$ pnpm add -Dw @changesets/cli
+
+$ pnpm changeset init
+
+
+
