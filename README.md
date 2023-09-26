@@ -51,6 +51,9 @@ pnpm 提出了 workspace 的概念，内置了对 monorepo 的支持，那么为
 ### ```filter``` 后面除了可以指定具体的包名，还可以跟着匹配规则来指定对匹配上规则的包进行操作，比如：###
 ```$ pnpm build --filter "./packages/**"```
 
+### 安装对应工程的包 ###
+```pnpm i --filter demo1```
+
 ### 子项目之间互相引用
 foo
 ```

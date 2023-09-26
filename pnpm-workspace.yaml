@@ -6,3 +6,5 @@ packages:
   - 'components/**'
   # exclude packages that are inside test directories
   - '!**/test/**'
+  # 放置各种公用代码
+  - '_public_/**'
