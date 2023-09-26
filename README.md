@@ -56,11 +56,16 @@ bar
 ## 发布 changesets
 https://pnpm.io/zh/using-changesets
 
-配置：要在 pnpm 工作空间上配置 changesets，将 changesets 作为开发依赖项安装在工作空间的根目录中：
+### 配置 ###
+要在 pnpm 工作空间上配置 changesets，将 changesets 作为开发依赖项安装在工作空间的根目录中：
 
 $ pnpm add -Dw @changesets/cli
 
 $ pnpm changeset init
 
+### 添加新的 changesets ###
+
+要生成新的 changesets，请在仓库的根目录中执行 ```pnpm changeset```
+```.changeset```目录中生成的 markdown 文件```red-cherries-build```需要被提交到仓库 
 
 
