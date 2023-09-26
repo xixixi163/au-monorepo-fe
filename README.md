@@ -68,4 +68,10 @@ $ pnpm changeset init
 要生成新的 changesets，请在仓库的根目录中执行 ```pnpm changeset```
 ```.changeset```目录中生成的 markdown 文件```red-cherries-build```需要被提交到仓库 
 
+### 发布 ###
+1、运行 ```pnpm changeset version``` 这将提高先前使用 ```pnpm changeset```（以及它们的任何依赖项）的版本，并更新变更日志文件
+
+2、运行 ``` pnpm install ``` 这将更新锁文件并重新构建所有 workspace 的包
+3、提交更改
+
 
