@@ -76,6 +76,10 @@ bar
 packages 内部进行互相引用。比如在 pkg1 中引用 pkg2
 ```$ pnpm install @qftjs/monorepo2 -r --filter @qftjs/monorepo1```
 
+在设置依赖版本的时候推荐用 ```workspace:*```，这样就可以保持依赖的版本是工作空间里最新版本，不需要每次手动更新依赖版本。
+
+当 `pnpm publish` 的时候，会自动将 `package.json` 中的 `workspace` 修正为对应的版本号。
+
 
 ## 发布 changesets
 https://pnpm.io/zh/using-changesets
@@ -99,5 +103,6 @@ $ pnpm changeset init
 3、提交更改
 4、运行``` pnpm publish -r ``` 此命令将发布所有包含被更新版本且尚未出现在包注册源中的包
 
-###
+### 问题
+对单独workspace 发布 ```pnpm publish --access public``` 报错404 发布不上
 

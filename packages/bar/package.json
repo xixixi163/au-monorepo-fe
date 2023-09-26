@@ -9,7 +9,8 @@
     "add": "node index.js"
   },
   "dependencies": {
-    "@fanny/utils": "workspace:*"
+    "@fanny/utils": "workspace:*",
+    "@mini/app": "workspace:*"
   },
   "peerDependencies": {
     "@types/node": "*"

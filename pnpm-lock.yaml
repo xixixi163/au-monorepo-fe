@@ -10,11 +10,16 @@ importers:
       '@changesets/cli': 2.26.2
       '@types/node': 20.6.5
 
+  components/mini-app:
+    specifiers: {}
+
   packages/bar:
     specifiers:
       '@fanny/utils': workspace:*
+      '@mini/app': workspace:*
     dependencies:
       '@fanny/utils': link:../fanny
+      '@mini/app': link:../../components/mini-app
 
   packages/fanny:
     specifiers: {}
