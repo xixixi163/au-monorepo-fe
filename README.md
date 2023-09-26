@@ -73,5 +73,5 @@ $ pnpm changeset init
 
 2、运行 ``` pnpm install ``` 这将更新锁文件并重新构建所有 workspace 的包
 3、提交更改
-
+4、运行``` pnpm publish -r ``` 此命令将发布所有包含被更新版本且尚未出现在包注册源中的包
 
