@@ -109,5 +109,27 @@ $ pnpm changeset init
 4、运行``` pnpm publish -r ``` 此命令将发布所有包含被更新版本且尚未出现在包注册源中的包
 
 ### 问题
-对单独workspace 发布 ```pnpm publish --access public``` 报错404 发布不上
+##### 对单独workspace 发布 ```pnpm publish --access public``` 报错404 发布不上
+如果项目设置了 private，要发布到 npm，需要加发布配置：
+```
+"publishConfig": {
+    "access": "public"
+}
+```
+
+包命名：如果命名与npm上有重合或相似会导致发布失败，包名类似，拒绝发布，包名就是package.json 中的name，需要重新命名
+使用作用域命名：
+- 如果因为包名与现有的包名太相近而被阻止发布这个包，那么找到一个独一无二包名最简单方法就是使用自己的作用域。
+- 使用@+npm用户名加在包名前面将包划到你的npm账户作用域下
+- 被划了作用域的包默认是私有的，发布配置加上public可公开发布，或通过```npm publish --access=public```让它变为公有的包 
+
+执行 pnpm publish
+
+删除npm包
+
+npm unpublish --force //强制删除
+
+npm unpublish guitest@1.0.1 //指定版本号
+
+
 

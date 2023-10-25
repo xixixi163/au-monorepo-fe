@@ -1,5 +1,5 @@
 {
-  "name": "bar",
+  "name": "@yixixi/bar",
   "type": "module",
   "version": "2.0.0",
   "description": "",
@@ -16,5 +16,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  }
 }
