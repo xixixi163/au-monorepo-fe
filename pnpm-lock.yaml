@@ -18,16 +18,14 @@ importers:
       element-plus: 2.3.14_vue@3.3.4
       vue: 3.3.4
 
-  components/mini-app:
+  _public_/utils:
     specifiers: {}
 
   packages/bar:
     specifiers:
       '@fanny/utils': workspace:*
-      '@mini/app': workspace:*
     dependencies:
       '@fanny/utils': link:../fanny
-      '@mini/app': link:../../components/mini-app
 
   packages/demo1:
     specifiers:

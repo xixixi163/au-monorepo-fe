@@ -16,7 +16,9 @@ pnpm 提出了 workspace 的概念，内置了对 monorepo 的支持，那么为
 - ``` package.json ```
 在项目中使用 pnpm 时，您不希望被其他人意外运行 npm install 或 yarn。 为了防止开发人员使用其他的包管理器，您可以将下面的这个 preinstall 脚本添加到您的 package.json
 
-- 了防止根目录被发布出去，需要设置工程根目录下 package.json配置文件的 private 字段为 true
+- 为了防止根目录被发布出去，###不想被意外发布到公共 npm 仓库时###，需要设置工程根目录下 package.json配置文件的 private 字段为 true。
+
+当我们的项目需要发布到私有的 npm 仓库时(比如公司内网的仓库)，需要设置 ```publishConfig``` 对象。
 
 ## 安装依赖
 > 使用工作空间搭建的项目，可以将公共依赖安装在根目录下，子项目中存放各自的依赖
