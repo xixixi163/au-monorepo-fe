@@ -85,6 +85,8 @@ packages 内部进行互相引用。比如在 pkg1 中引用 pkg2
 
 当 `pnpm publish` 的时候，会自动将 `package.json` 中的 `workspace` 修正为对应的版本号。
 
+- 所以有个问题，仓库是`private`情况，只能提交代码，提交的是`workspace`。碰到非组件库不需要发包的项目则提交直接是workspace？那是否会影响打包
+
 
 ## 发布 changesets
 https://pnpm.io/zh/using-changesets
@@ -108,7 +110,16 @@ $ pnpm changeset init
 3、提交更改
 4、运行``` pnpm publish -r ``` 此命令将发布所有包含被更新版本且尚未出现在包注册源中的包
 
-### 问题
+### 版本号更改 ###
+- 命令选择不了 patch major minor 时，进入 `.changeset` 文件修改字段
+```
+{
+  "summary": "Fix a bug",
+  "releaseType": "patch"
+}
+```
+
+### 问题 
 ##### 对单独workspace 发布 ```pnpm publish --access public``` 报错404 发布不上
 如果项目设置了 private，要发布到 npm，需要加发布配置：
 ```
