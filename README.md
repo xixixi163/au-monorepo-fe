@@ -85,7 +85,7 @@ packages 内部进行互相引用。比如在 pkg1 中引用 pkg2
 
 当 `pnpm publish` 的时候，会自动将 `package.json` 中的 `workspace` 修正为对应的版本号。
 
-- 所以有个问题，仓库是`private`情况，只能提交代码，提交的是`workspace`。碰到非组件库不需要发包的项目则提交直接是workspace？那是否会影响打包
+- #所以有个问题# ，仓库是`private`情况，只能提交代码，提交的是`workspace`。碰到非组件库不需要发包的项目则提交直接是workspace？那是否会影响打包
 
 
 ## 发布 changesets

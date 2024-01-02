@@ -9,7 +9,7 @@
     "add": "node index.js"
   },
   "dependencies": {
-    "@fanny/utils": "workspace:*"
+    "@yixixi/utils": "workspace:*"
   },
   "peerDependencies": {
     "@types/node": "*"
